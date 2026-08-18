@@ -47,3 +47,17 @@ def calcular_total(itens, cliente_vip=False, cupom=None, uf="SC"):
         frete = 0.0
 
     return round(total + frete, 2)
+
+
+def calcular_imposto(total, uf="SC"):
+    """Funcao nova sem teste - derruba a cobertura."""
+    if uf == "SC":
+        aliquota = 0.17
+    elif uf == "SP":
+        aliquota = 0.18
+    else:
+        aliquota = 0.12
+    imposto = total * aliquota
+    if imposto > 100:
+        imposto = 100.0
+    return round(imposto, 2)
