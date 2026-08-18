@@ -40,7 +40,7 @@ def calcular_total(itens, cliente_vip=False, cupom=None, uf="SC"):
     elif uf in ("SP", "RJ", "MG", "ES"):
         frete = 20.0
     else:
-        frete = 35.0 
+        frete = 35.0
 
     # frete gratis
     if total >= 300 or cupom == "FRETEGRATIS":
