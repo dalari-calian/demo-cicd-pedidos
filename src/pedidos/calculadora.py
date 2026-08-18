@@ -14,7 +14,7 @@ para refatorar com seguranca depois que existe uma suite rodando no pipeline.
 
 def calcular_total(itens, cliente_vip=False, cupom=None, uf="SC"):
     """Calcula o valor final de um pedido (produtos - descontos + frete)."""
-    total = 0.0 
+    total = 0.0
     for item in itens:
         total = total + item["preco"] * item["qtd"]
 
