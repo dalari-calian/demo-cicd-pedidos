@@ -46,4 +46,4 @@ def calcular_total(itens, cliente_vip=False, cupom=None, uf="SC"):
     if total >= 300 or cupom == "FRETEGRATIS":
         frete = 0.0
 
-    return round(total + frete, 2) 
+    return round(total + frete, 2)
