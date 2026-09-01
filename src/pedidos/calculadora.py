@@ -60,4 +60,4 @@ def calcular_imposto(total, uf="SC"):
     imposto = total * aliquota
     if imposto > 100:
         imposto = 100.0
-    return round(imposto, 2)
+    return round(imposto, 2) 
