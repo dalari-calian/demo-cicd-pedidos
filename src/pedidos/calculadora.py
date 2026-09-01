@@ -10,6 +10,8 @@ Ele funciona, mas tem os smells classicos de manutencao:
 O objetivo da demo NAO e refatorar isso ao vivo, e sim mostrar que so da
 para refatorar com seguranca depois que existe uma suite rodando no pipeline.
 """
+
+
 def calcular_total(itens, cliente_vip=False, cupom=None, uf="SC"):
     """Calcula o valor final de um pedido (produtos - descontos + frete)."""
     total = 0.0
@@ -48,6 +50,7 @@ def calcular_total(itens, cliente_vip=False, cupom=None, uf="SC"):
 
 
 def calcular_imposto(total, uf="SC"):
+    """Funcao nova sem teste - derruba a cobertura."""
     if uf == "SC":
         aliquota = 0.17
     elif uf == "SP":
